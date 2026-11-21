@@ -23,7 +23,7 @@ button:hover{background:#252b36}
 </style></head><body>
 <div class="wrap">
 <div>
-<h1>Je maanfoto op een bol</h1><a href="maak_maanbol.py">download het .py file</a>
+<h1>Je maanfoto op een bol</h1><a href="maak_maanbol.py">download het pythonprogramma en probeer het zelf met je eigen foto</a>
 <p class="sub">Sleep om om de maan heen te bewegen — net als met de projector.</p>
 <canvas id="c" width="640" height="640"></canvas>
 </div>
@@ -88,4 +88,4 @@ const sp=document.getElementById('spin');
 sp.onclick=()=>{spinning=!spinning;sp.textContent=spinning?'Stop ■':'Draaien ▶';if(spinning)loop()};
 function loop(){if(!spinning)return;let v=+yaw.value+1;if(v>180)v-=360;yaw.value=v;draw();requestAnimationFrame(loop)}
 </script>
-<a href="maak_maanbol.py">download het pythonprogramma en probeer het zelf met je eigen foto</a></body></html>
+</body></html>
