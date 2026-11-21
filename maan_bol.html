@@ -87,4 +87,5 @@ document.querySelectorAll('button[data-p]').forEach(bt=>bt.onclick=()=>{const[p,
 const sp=document.getElementById('spin');
 sp.onclick=()=>{spinning=!spinning;sp.textContent=spinning?'Stop ■':'Draaien ▶';if(spinning)loop()};
 function loop(){if(!spinning)return;let v=+yaw.value+1;if(v>180)v-=360;yaw.value=v;draw();requestAnimationFrame(loop)}
-</script></body></html>
+</script>
+<a href="maak_maanbol.py">download het pythonprogramma en probeer het zelf met je eigen foto</a></body></html>
