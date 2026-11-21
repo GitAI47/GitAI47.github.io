@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Maan op een bol — virtuele projector</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
 <style>
 :root{color-scheme:dark}
 body{margin:0;background:#07080b;color:#d9dde4;font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
@@ -20,12 +21,23 @@ button:hover{background:#252b36}
 .note{font-size:13px;color:#8b93a1;margin-top:16px}
 .note b{color:#c9ced8;font-weight:600}
 .sw{display:inline-block;width:10px;height:10px;background:#1a1e26;border:1px solid #323a48;vertical-align:middle;margin-right:4px}
+.credit{margin:14px 0 0;padding-top:12px;border-top:1px solid #1f242d;
+  font-family:'Cormorant Garamond',Georgia,serif;color:#b9c0cc;text-align:center}
+.credit .wie{font-size:19px;font-weight:500;letter-spacing:.02em;color:#e4e7ec}
+.credit .wat{font-size:16px;font-style:italic;color:#9aa3b2;margin-top:2px}
+.credit .waar{font-size:13px;letter-spacing:.18em;text-transform:uppercase;
+  font-family:system-ui,sans-serif;color:#6f7888;margin-top:8px}
 </style></head><body>
 <div class="wrap">
 <div>
 <h1>Je maanfoto op een bol</h1><a href="maak_maanbol.py">download het pythonprogramma en probeer het zelf met je eigen foto</a>
 <p class="sub">Sleep om om de maan heen te bewegen — net als met de projector.</p>
 <canvas id="c" width="640" height="640"></canvas>
+<div class="credit">
+  <div class="wie">Opname: Peter van Haeringen</div>
+  <div class="wat">150 mm Newton f/5 · USB-camera · gestapeld met eigen software</div>
+  <div class="waar">Monnickendam · 20 november 2026</div>
+</div>
 </div>
 <div class="panel">
 <label>Lengte (links–rechts) <span class="val" id="yv"></span><input id="yaw" type="range" min="-180" max="180" step="1" value="0"></label>
